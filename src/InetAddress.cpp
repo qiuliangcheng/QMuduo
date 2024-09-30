@@ -6,7 +6,7 @@ InetAddress::InetAddress(uint16_t port,std::string ip){
     bzero(&addr_,sizeof(addr_));
     addr_.sin_family=AF_INET;
     addr_.sin_port=htons(port);
-    addr_.sin_addr.s_addr = inet_addr(ip.c_str());
+    addr_.sin_addr.s_addr = inet_addr(ip.c_str());//inet_addr函数转换网络主机地址（如192.168.1.10)为网络字节序二进制值
 }
 
 std::string InetAddress::toIP() const{
@@ -28,6 +28,9 @@ std::string InetAddress::toIpPort() const{
     size_t end =strlen(buf);
     uint16_t port=ntohs(addr_.sin_port);
     sprintf(buf+end,":%u",port);
+    //int sprintf(char* str, const char* format, ...);
+    //str：指向要写入的字符串的指针
+    //format：包含格式控制符的字符串，用于指定输出的格式。
     return buf;
 }
 uint16_t InetAddress::toPort() const{

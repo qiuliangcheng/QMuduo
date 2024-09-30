@@ -757,7 +757,7 @@ struct LogIniter {
                 });
     }
 };
-static LogIniter __log_init;//没懂这个是什么意思 
+static LogIniter __log_init;//静态结构体会在main函数之前执行 
 void LoggerManager::init()
 {
 }
