@@ -72,10 +72,24 @@ include CMakeFiles/qlc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/qlc.dir/flags.make
 
+CMakeFiles/qlc.dir/src/EventLoop.o: CMakeFiles/qlc.dir/flags.make
+CMakeFiles/qlc.dir/src/EventLoop.o: ../src/EventLoop.cpp
+CMakeFiles/qlc.dir/src/EventLoop.o: CMakeFiles/qlc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qlc.dir/src/EventLoop.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/EventLoop.o -MF CMakeFiles/qlc.dir/src/EventLoop.o.d -o CMakeFiles/qlc.dir/src/EventLoop.o -c /home/qlc/muduo/src/EventLoop.cpp
+
+CMakeFiles/qlc.dir/src/EventLoop.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qlc.dir/src/EventLoop.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlc/muduo/src/EventLoop.cpp > CMakeFiles/qlc.dir/src/EventLoop.i
+
+CMakeFiles/qlc.dir/src/EventLoop.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qlc.dir/src/EventLoop.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlc/muduo/src/EventLoop.cpp -o CMakeFiles/qlc.dir/src/EventLoop.s
+
 CMakeFiles/qlc.dir/src/InetAddress.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/InetAddress.o: ../src/InetAddress.cpp
 CMakeFiles/qlc.dir/src/InetAddress.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qlc.dir/src/InetAddress.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qlc.dir/src/InetAddress.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/InetAddress.o -MF CMakeFiles/qlc.dir/src/InetAddress.o.d -o CMakeFiles/qlc.dir/src/InetAddress.o -c /home/qlc/muduo/src/InetAddress.cpp
 
 CMakeFiles/qlc.dir/src/InetAddress.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/qlc.dir/src/InetAddress.s: cmake_force
 CMakeFiles/qlc.dir/src/TcpServer.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/TcpServer.o: ../src/TcpServer.cpp
 CMakeFiles/qlc.dir/src/TcpServer.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qlc.dir/src/TcpServer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qlc.dir/src/TcpServer.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/TcpServer.o -MF CMakeFiles/qlc.dir/src/TcpServer.o.d -o CMakeFiles/qlc.dir/src/TcpServer.o -c /home/qlc/muduo/src/TcpServer.cpp
 
 CMakeFiles/qlc.dir/src/TcpServer.i: cmake_force
@@ -100,10 +114,38 @@ CMakeFiles/qlc.dir/src/TcpServer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qlc.dir/src/TcpServer.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlc/muduo/src/TcpServer.cpp -o CMakeFiles/qlc.dir/src/TcpServer.s
 
+CMakeFiles/qlc.dir/src/Timestamp.o: CMakeFiles/qlc.dir/flags.make
+CMakeFiles/qlc.dir/src/Timestamp.o: ../src/Timestamp.cpp
+CMakeFiles/qlc.dir/src/Timestamp.o: CMakeFiles/qlc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qlc.dir/src/Timestamp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/Timestamp.o -MF CMakeFiles/qlc.dir/src/Timestamp.o.d -o CMakeFiles/qlc.dir/src/Timestamp.o -c /home/qlc/muduo/src/Timestamp.cpp
+
+CMakeFiles/qlc.dir/src/Timestamp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qlc.dir/src/Timestamp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlc/muduo/src/Timestamp.cpp > CMakeFiles/qlc.dir/src/Timestamp.i
+
+CMakeFiles/qlc.dir/src/Timestamp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qlc.dir/src/Timestamp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlc/muduo/src/Timestamp.cpp -o CMakeFiles/qlc.dir/src/Timestamp.s
+
+CMakeFiles/qlc.dir/src/channel.o: CMakeFiles/qlc.dir/flags.make
+CMakeFiles/qlc.dir/src/channel.o: ../src/channel.cpp
+CMakeFiles/qlc.dir/src/channel.o: CMakeFiles/qlc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qlc.dir/src/channel.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/channel.o -MF CMakeFiles/qlc.dir/src/channel.o.d -o CMakeFiles/qlc.dir/src/channel.o -c /home/qlc/muduo/src/channel.cpp
+
+CMakeFiles/qlc.dir/src/channel.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qlc.dir/src/channel.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlc/muduo/src/channel.cpp > CMakeFiles/qlc.dir/src/channel.i
+
+CMakeFiles/qlc.dir/src/channel.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qlc.dir/src/channel.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlc/muduo/src/channel.cpp -o CMakeFiles/qlc.dir/src/channel.s
+
 CMakeFiles/qlc.dir/src/config.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/config.o: ../src/config.cpp
 CMakeFiles/qlc.dir/src/config.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qlc.dir/src/config.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qlc.dir/src/config.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/config.o -MF CMakeFiles/qlc.dir/src/config.o.d -o CMakeFiles/qlc.dir/src/config.o -c /home/qlc/muduo/src/config.cpp
 
 CMakeFiles/qlc.dir/src/config.i: cmake_force
@@ -117,7 +159,7 @@ CMakeFiles/qlc.dir/src/config.s: cmake_force
 CMakeFiles/qlc.dir/src/mutex.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/mutex.o: ../src/mutex.cpp
 CMakeFiles/qlc.dir/src/mutex.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/qlc.dir/src/mutex.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qlc.dir/src/mutex.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/mutex.o -MF CMakeFiles/qlc.dir/src/mutex.o.d -o CMakeFiles/qlc.dir/src/mutex.o -c /home/qlc/muduo/src/mutex.cpp
 
 CMakeFiles/qlc.dir/src/mutex.i: cmake_force
@@ -131,7 +173,7 @@ CMakeFiles/qlc.dir/src/mutex.s: cmake_force
 CMakeFiles/qlc.dir/src/qlc_log.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/qlc_log.o: ../src/qlc_log.cpp
 CMakeFiles/qlc.dir/src/qlc_log.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qlc.dir/src/qlc_log.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/qlc.dir/src/qlc_log.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/qlc_log.o -MF CMakeFiles/qlc.dir/src/qlc_log.o.d -o CMakeFiles/qlc.dir/src/qlc_log.o -c /home/qlc/muduo/src/qlc_log.cpp
 
 CMakeFiles/qlc.dir/src/qlc_log.i: cmake_force
@@ -145,7 +187,7 @@ CMakeFiles/qlc.dir/src/qlc_log.s: cmake_force
 CMakeFiles/qlc.dir/src/thread.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/thread.o: ../src/thread.cpp
 CMakeFiles/qlc.dir/src/thread.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qlc.dir/src/thread.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/qlc.dir/src/thread.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/thread.o -MF CMakeFiles/qlc.dir/src/thread.o.d -o CMakeFiles/qlc.dir/src/thread.o -c /home/qlc/muduo/src/thread.cpp
 
 CMakeFiles/qlc.dir/src/thread.i: cmake_force
@@ -159,7 +201,7 @@ CMakeFiles/qlc.dir/src/thread.s: cmake_force
 CMakeFiles/qlc.dir/src/util.o: CMakeFiles/qlc.dir/flags.make
 CMakeFiles/qlc.dir/src/util.o: ../src/util.cpp
 CMakeFiles/qlc.dir/src/util.o: CMakeFiles/qlc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qlc.dir/src/util.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/qlc.dir/src/util.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qlc.dir/src/util.o -MF CMakeFiles/qlc.dir/src/util.o.d -o CMakeFiles/qlc.dir/src/util.o -c /home/qlc/muduo/src/util.cpp
 
 CMakeFiles/qlc.dir/src/util.i: cmake_force
@@ -172,8 +214,11 @@ CMakeFiles/qlc.dir/src/util.s: cmake_force
 
 # Object files for target qlc
 qlc_OBJECTS = \
+"CMakeFiles/qlc.dir/src/EventLoop.o" \
 "CMakeFiles/qlc.dir/src/InetAddress.o" \
 "CMakeFiles/qlc.dir/src/TcpServer.o" \
+"CMakeFiles/qlc.dir/src/Timestamp.o" \
+"CMakeFiles/qlc.dir/src/channel.o" \
 "CMakeFiles/qlc.dir/src/config.o" \
 "CMakeFiles/qlc.dir/src/mutex.o" \
 "CMakeFiles/qlc.dir/src/qlc_log.o" \
@@ -183,8 +228,11 @@ qlc_OBJECTS = \
 # External object files for target qlc
 qlc_EXTERNAL_OBJECTS =
 
+../lib/libqlc.so: CMakeFiles/qlc.dir/src/EventLoop.o
 ../lib/libqlc.so: CMakeFiles/qlc.dir/src/InetAddress.o
 ../lib/libqlc.so: CMakeFiles/qlc.dir/src/TcpServer.o
+../lib/libqlc.so: CMakeFiles/qlc.dir/src/Timestamp.o
+../lib/libqlc.so: CMakeFiles/qlc.dir/src/channel.o
 ../lib/libqlc.so: CMakeFiles/qlc.dir/src/config.o
 ../lib/libqlc.so: CMakeFiles/qlc.dir/src/mutex.o
 ../lib/libqlc.so: CMakeFiles/qlc.dir/src/qlc_log.o
@@ -192,7 +240,7 @@ qlc_EXTERNAL_OBJECTS =
 ../lib/libqlc.so: CMakeFiles/qlc.dir/src/util.o
 ../lib/libqlc.so: CMakeFiles/qlc.dir/build.make
 ../lib/libqlc.so: CMakeFiles/qlc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library ../lib/libqlc.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlc/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../lib/libqlc.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qlc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/qlc/muduo/src/EventLoop.cpp" "CMakeFiles/qlc.dir/src/EventLoop.o" "gcc" "CMakeFiles/qlc.dir/src/EventLoop.o.d"
   "/home/qlc/muduo/src/InetAddress.cpp" "CMakeFiles/qlc.dir/src/InetAddress.o" "gcc" "CMakeFiles/qlc.dir/src/InetAddress.o.d"
   "/home/qlc/muduo/src/TcpServer.cpp" "CMakeFiles/qlc.dir/src/TcpServer.o" "gcc" "CMakeFiles/qlc.dir/src/TcpServer.o.d"
+  "/home/qlc/muduo/src/Timestamp.cpp" "CMakeFiles/qlc.dir/src/Timestamp.o" "gcc" "CMakeFiles/qlc.dir/src/Timestamp.o.d"
+  "/home/qlc/muduo/src/channel.cpp" "CMakeFiles/qlc.dir/src/channel.o" "gcc" "CMakeFiles/qlc.dir/src/channel.o.d"
   "/home/qlc/muduo/src/config.cpp" "CMakeFiles/qlc.dir/src/config.o" "gcc" "CMakeFiles/qlc.dir/src/config.o.d"
   "/home/qlc/muduo/src/mutex.cpp" "CMakeFiles/qlc.dir/src/mutex.o" "gcc" "CMakeFiles/qlc.dir/src/mutex.o.d"
   "/home/qlc/muduo/src/qlc_log.cpp" "CMakeFiles/qlc.dir/src/qlc_log.o" "gcc" "CMakeFiles/qlc.dir/src/qlc_log.o.d"
