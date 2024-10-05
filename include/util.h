@@ -12,6 +12,18 @@
 #include "qlc_log.h"
 
 namespace qlc{
+namespace CurrentThread{
+    extern __thread int t_cachedTid;
+    void cacheTid();
+    inline int tid()
+    {
+        if (__builtin_expect(t_cachedTid == 0, 0))
+        {
+            cacheTid();
+        }
+        return t_cachedTid;
+    }
+}
     pid_t GetThreadId();
     uint32_t GetFiberId();
     //将栈信息保存再bt数组里 size 是能返回的最大的栈的数量 

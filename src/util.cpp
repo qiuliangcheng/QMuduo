@@ -3,6 +3,18 @@
 #include <execinfo.h>
 #include <sys/time.h>
 namespace qlc{
+namespace CurrentThread{
+    __thread int t_cachedTid = 0;   
+
+    void cacheTid()
+    {
+        if (t_cachedTid == 0)
+        {
+            // 通过linux系统调用，获取当前线程的tid值
+            t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid));
+        }
+    }
+}
     qlc::Logger::ptr g_logger=QLC_LOG_NAME("system");
     pid_t GetThreadId(){
         return syscall(SYS_gettid);

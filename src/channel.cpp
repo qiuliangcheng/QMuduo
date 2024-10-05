@@ -28,11 +28,11 @@ Channel::Channel(EventLoop *loop, int fd)
 
 Channel::~Channel()
 {
-
+ 
 }
 
 void Channel::handleEvent(Timestamp receiveTime)
-{
+{ 
     std::shared_ptr<void> guard;
     if(tied_){
         guard=tie_.lock();
@@ -58,7 +58,7 @@ void Channel::update()
 {
     //通过eventpoll 调用epoll的方法 注册fd的event事件
     //TODO add code about channel in eventloop
-    //loop_->updateChannel(this);
+    loop_->updateChannel(this);
 }
 
 void Channel::handleEventWriteGuard(Timestamp receiveTime)
@@ -86,7 +86,7 @@ void Channel::handleEventWriteGuard(Timestamp receiveTime)
 }
 void Channel::remove() // 在channel所属的eventloop中 删除这个channel
 {
-    //loop_->removeChannel(this);
+    loop_->removeChannel(this);
 }
 
 }

@@ -132,31 +132,35 @@ qlc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/build
 .PHONY : qlc/fast
 
-#=============================================================================
-# Target rules for targets named iptest
+# target to build an object file
+src/DefaultPoller.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/DefaultPoller.o
+.PHONY : src/DefaultPoller.o
 
-# Build rule for target.
-iptest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 iptest
-.PHONY : iptest
+# target to preprocess a source file
+src/DefaultPoller.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/DefaultPoller.i
+.PHONY : src/DefaultPoller.i
 
-# fast build rule for target.
-iptest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iptest.dir/build.make CMakeFiles/iptest.dir/build
-.PHONY : iptest/fast
+# target to generate assembly for a file
+src/DefaultPoller.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/DefaultPoller.s
+.PHONY : src/DefaultPoller.s
 
-#=============================================================================
-# Target rules for targets named Timestamp_test
+# target to build an object file
+src/EpollPoller.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EpollPoller.o
+.PHONY : src/EpollPoller.o
 
-# Build rule for target.
-Timestamp_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Timestamp_test
-.PHONY : Timestamp_test
+# target to preprocess a source file
+src/EpollPoller.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EpollPoller.i
+.PHONY : src/EpollPoller.i
 
-# fast build rule for target.
-Timestamp_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Timestamp_test.dir/build.make CMakeFiles/Timestamp_test.dir/build
-.PHONY : Timestamp_test/fast
+# target to generate assembly for a file
+src/EpollPoller.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EpollPoller.s
+.PHONY : src/EpollPoller.s
 
 # target to build an object file
 src/EventLoop.o:
@@ -174,6 +178,21 @@ src/EventLoop.s:
 .PHONY : src/EventLoop.s
 
 # target to build an object file
+src/EventLoopThread.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EventLoopThread.o
+.PHONY : src/EventLoopThread.o
+
+# target to preprocess a source file
+src/EventLoopThread.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EventLoopThread.i
+.PHONY : src/EventLoopThread.i
+
+# target to generate assembly for a file
+src/EventLoopThread.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EventLoopThread.s
+.PHONY : src/EventLoopThread.s
+
+# target to build an object file
 src/InetAddress.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/InetAddress.o
 .PHONY : src/InetAddress.o
@@ -189,6 +208,21 @@ src/InetAddress.s:
 .PHONY : src/InetAddress.s
 
 # target to build an object file
+src/Poller.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Poller.o
+.PHONY : src/Poller.o
+
+# target to preprocess a source file
+src/Poller.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Poller.i
+.PHONY : src/Poller.i
+
+# target to generate assembly for a file
+src/Poller.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Poller.s
+.PHONY : src/Poller.s
+
+# target to build an object file
 src/TcpServer.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/TcpServer.o
 .PHONY : src/TcpServer.o
@@ -202,6 +236,21 @@ src/TcpServer.i:
 src/TcpServer.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/TcpServer.s
 .PHONY : src/TcpServer.s
+
+# target to build an object file
+src/ThreadC11.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/ThreadC11.o
+.PHONY : src/ThreadC11.o
+
+# target to preprocess a source file
+src/ThreadC11.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/ThreadC11.i
+.PHONY : src/ThreadC11.i
+
+# target to generate assembly for a file
+src/ThreadC11.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/ThreadC11.s
+.PHONY : src/ThreadC11.s
 
 # target to build an object file
 src/Timestamp.o:
@@ -308,36 +357,6 @@ src/util.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/util.s
 .PHONY : src/util.s
 
-# target to build an object file
-test/Timestamp_test.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Timestamp_test.dir/build.make CMakeFiles/Timestamp_test.dir/test/Timestamp_test.o
-.PHONY : test/Timestamp_test.o
-
-# target to preprocess a source file
-test/Timestamp_test.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Timestamp_test.dir/build.make CMakeFiles/Timestamp_test.dir/test/Timestamp_test.i
-.PHONY : test/Timestamp_test.i
-
-# target to generate assembly for a file
-test/Timestamp_test.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Timestamp_test.dir/build.make CMakeFiles/Timestamp_test.dir/test/Timestamp_test.s
-.PHONY : test/Timestamp_test.s
-
-# target to build an object file
-test/iptest.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iptest.dir/build.make CMakeFiles/iptest.dir/test/iptest.o
-.PHONY : test/iptest.o
-
-# target to preprocess a source file
-test/iptest.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iptest.dir/build.make CMakeFiles/iptest.dir/test/iptest.i
-.PHONY : test/iptest.i
-
-# target to generate assembly for a file
-test/iptest.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iptest.dir/build.make CMakeFiles/iptest.dir/test/iptest.s
-.PHONY : test/iptest.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -346,18 +365,31 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Timestamp_test"
-	@echo "... iptest"
 	@echo "... qlc"
+	@echo "... src/DefaultPoller.o"
+	@echo "... src/DefaultPoller.i"
+	@echo "... src/DefaultPoller.s"
+	@echo "... src/EpollPoller.o"
+	@echo "... src/EpollPoller.i"
+	@echo "... src/EpollPoller.s"
 	@echo "... src/EventLoop.o"
 	@echo "... src/EventLoop.i"
 	@echo "... src/EventLoop.s"
+	@echo "... src/EventLoopThread.o"
+	@echo "... src/EventLoopThread.i"
+	@echo "... src/EventLoopThread.s"
 	@echo "... src/InetAddress.o"
 	@echo "... src/InetAddress.i"
 	@echo "... src/InetAddress.s"
+	@echo "... src/Poller.o"
+	@echo "... src/Poller.i"
+	@echo "... src/Poller.s"
 	@echo "... src/TcpServer.o"
 	@echo "... src/TcpServer.i"
 	@echo "... src/TcpServer.s"
+	@echo "... src/ThreadC11.o"
+	@echo "... src/ThreadC11.i"
+	@echo "... src/ThreadC11.s"
 	@echo "... src/Timestamp.o"
 	@echo "... src/Timestamp.i"
 	@echo "... src/Timestamp.s"
@@ -379,12 +411,6 @@ help:
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"
-	@echo "... test/Timestamp_test.o"
-	@echo "... test/Timestamp_test.i"
-	@echo "... test/Timestamp_test.s"
-	@echo "... test/iptest.o"
-	@echo "... test/iptest.i"
-	@echo "... test/iptest.s"
 .PHONY : help
 
 

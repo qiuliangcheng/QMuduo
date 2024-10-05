@@ -44,6 +44,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/qlc.dir/DependInfo.cmake"
-  "CMakeFiles/iptest.dir/DependInfo.cmake"
-  "CMakeFiles/Timestamp_test.dir/DependInfo.cmake"
   )

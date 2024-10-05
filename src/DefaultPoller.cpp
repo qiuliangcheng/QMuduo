@@ -8,8 +8,7 @@ Poller* Poller::newDefaultPlloer(EventLoop *loop){
         return nullptr;
     }
     else{
-        return nullptr;
+        return new EpollPoller(loop);
     }
-
 }
 }

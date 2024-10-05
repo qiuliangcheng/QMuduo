@@ -7,7 +7,7 @@ static qlc::Logger::ptr g_logger=QLC_LOG_NAME("system");
 
 EpollPoller::EpollPoller(EventLoop *loop)
             :Poller(loop)//调用父类的构造方法
-            ,epollfd_(::epoll_create1(EPOLL_CLOEXEC))
+            ,epollfd_(::epoll_create(EPOLL_CLOEXEC))
             ,events_(kInitEventListSize)
 {
     if (epollfd_ < 0)
@@ -37,7 +37,7 @@ Timestamp EpollPoller::poll(int timeoutMS, ChannelList *activeChannels)
         QLC_LOG_DEBUG(g_logger)<<numEvents<<"has happened";
         //将所有事件返回放到activeChannels里面  然后返回给eventloop 让他去进行事件分发
         fillActiveChannels(numEvents,activeChannels);
-        if (numEvents >= events_.size())
+        if (numEvents >= (int)events_.size())
         {
             events_.resize(events_.size() * 2);
         }
@@ -69,7 +69,7 @@ void EpollPoller::updateChannel(Channel *channel)
         channel->set_index(kAdded);
         update(EPOLL_CTL_ADD, channel);
     }else{
-        int fd = channel->fd();
+        // int fd = channel->fd();
         if (channel->isNoneEvent())//如果fd没有任何感兴趣的事件 就把他从epoll里面移除
         {
             update(EPOLL_CTL_DEL, channel);
