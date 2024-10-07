@@ -15,6 +15,7 @@ static int createNonblocking()
     {
         QLC_LOG_FMT_FATAL(g_logger,"%s:%s:%d listen socket create err:%d \n", __FILE__, __FUNCTION__, __LINE__, errno);
     }
+    return sockfd;
 }
 
 Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr, bool reuseport)

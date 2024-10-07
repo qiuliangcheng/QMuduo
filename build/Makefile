@@ -132,6 +132,49 @@ qlc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/build
 .PHONY : qlc/fast
 
+#=============================================================================
+# Target rules for targets named muduo_test
+
+# Build rule for target.
+muduo_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo_test
+.PHONY : muduo_test
+
+# fast build rule for target.
+muduo_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/build
+.PHONY : muduo_test/fast
+
+# target to build an object file
+src/Acceptor.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Acceptor.o
+.PHONY : src/Acceptor.o
+
+# target to preprocess a source file
+src/Acceptor.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Acceptor.i
+.PHONY : src/Acceptor.i
+
+# target to generate assembly for a file
+src/Acceptor.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Acceptor.s
+.PHONY : src/Acceptor.s
+
+# target to build an object file
+src/Buffer.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Buffer.o
+.PHONY : src/Buffer.o
+
+# target to preprocess a source file
+src/Buffer.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Buffer.i
+.PHONY : src/Buffer.i
+
+# target to generate assembly for a file
+src/Buffer.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Buffer.s
+.PHONY : src/Buffer.s
+
 # target to build an object file
 src/DefaultPoller.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/DefaultPoller.o
@@ -193,6 +236,21 @@ src/EventLoopThread.s:
 .PHONY : src/EventLoopThread.s
 
 # target to build an object file
+src/EventLoopThreadPool.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EventLoopThreadPool.o
+.PHONY : src/EventLoopThreadPool.o
+
+# target to preprocess a source file
+src/EventLoopThreadPool.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EventLoopThreadPool.i
+.PHONY : src/EventLoopThreadPool.i
+
+# target to generate assembly for a file
+src/EventLoopThreadPool.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/EventLoopThreadPool.s
+.PHONY : src/EventLoopThreadPool.s
+
+# target to build an object file
 src/InetAddress.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/InetAddress.o
 .PHONY : src/InetAddress.o
@@ -221,6 +279,36 @@ src/Poller.i:
 src/Poller.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Poller.s
 .PHONY : src/Poller.s
+
+# target to build an object file
+src/Socket.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Socket.o
+.PHONY : src/Socket.o
+
+# target to preprocess a source file
+src/Socket.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Socket.i
+.PHONY : src/Socket.i
+
+# target to generate assembly for a file
+src/Socket.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/Socket.s
+.PHONY : src/Socket.s
+
+# target to build an object file
+src/TcpConnection.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/TcpConnection.o
+.PHONY : src/TcpConnection.o
+
+# target to preprocess a source file
+src/TcpConnection.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/TcpConnection.i
+.PHONY : src/TcpConnection.i
+
+# target to generate assembly for a file
+src/TcpConnection.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/TcpConnection.s
+.PHONY : src/TcpConnection.s
 
 # target to build an object file
 src/TcpServer.o:
@@ -357,6 +445,21 @@ src/util.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/util.s
 .PHONY : src/util.s
 
+# target to build an object file
+test/muduo_test.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/test/muduo_test.o
+.PHONY : test/muduo_test.o
+
+# target to preprocess a source file
+test/muduo_test.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/test/muduo_test.i
+.PHONY : test/muduo_test.i
+
+# target to generate assembly for a file
+test/muduo_test.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/test/muduo_test.s
+.PHONY : test/muduo_test.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -365,7 +468,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... muduo_test"
 	@echo "... qlc"
+	@echo "... src/Acceptor.o"
+	@echo "... src/Acceptor.i"
+	@echo "... src/Acceptor.s"
+	@echo "... src/Buffer.o"
+	@echo "... src/Buffer.i"
+	@echo "... src/Buffer.s"
 	@echo "... src/DefaultPoller.o"
 	@echo "... src/DefaultPoller.i"
 	@echo "... src/DefaultPoller.s"
@@ -378,12 +488,21 @@ help:
 	@echo "... src/EventLoopThread.o"
 	@echo "... src/EventLoopThread.i"
 	@echo "... src/EventLoopThread.s"
+	@echo "... src/EventLoopThreadPool.o"
+	@echo "... src/EventLoopThreadPool.i"
+	@echo "... src/EventLoopThreadPool.s"
 	@echo "... src/InetAddress.o"
 	@echo "... src/InetAddress.i"
 	@echo "... src/InetAddress.s"
 	@echo "... src/Poller.o"
 	@echo "... src/Poller.i"
 	@echo "... src/Poller.s"
+	@echo "... src/Socket.o"
+	@echo "... src/Socket.i"
+	@echo "... src/Socket.s"
+	@echo "... src/TcpConnection.o"
+	@echo "... src/TcpConnection.i"
+	@echo "... src/TcpConnection.s"
 	@echo "... src/TcpServer.o"
 	@echo "... src/TcpServer.i"
 	@echo "... src/TcpServer.s"
@@ -411,6 +530,9 @@ help:
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"
+	@echo "... test/muduo_test.o"
+	@echo "... test/muduo_test.i"
+	@echo "... test/muduo_test.s"
 .PHONY : help
 
 

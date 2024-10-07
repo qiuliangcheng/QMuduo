@@ -29,6 +29,11 @@
         "cmath": "cpp",
         "cstring": "cpp",
         "unordered_map": "cpp",
-        "atomic": "cpp"
+        "atomic": "cpp",
+        "internet": "cpp",
+        "buffer": "cpp",
+        "socket": "cpp",
+        "string_view": "cpp",
+        "iostream": "cpp"
     }
 }

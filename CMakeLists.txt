@@ -21,6 +21,9 @@ set(LIB_QLC
 
 # add_executable(Timestamp_test test/Timestamp_test.cpp)
 # target_link_libraries(Timestamp_test qlc ${LIB_QLC})
+
+add_executable(muduo_test test/muduo_test.cpp)
+target_link_libraries(muduo_test qlc ${LIB_QLC})
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 

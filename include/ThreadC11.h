@@ -13,7 +13,7 @@ class ThreadC11:public Noncopyable{
 public:
     using threadFunc=std::function<void()>;
     explicit ThreadC11(threadFunc cb, const std::string &name = std::string());
-    ~ThreadC11();
+    ~ThreadC11()=default;
     void start();//这个得手动调用start函数开启线程
     void join();
     bool started() const { return started_; }

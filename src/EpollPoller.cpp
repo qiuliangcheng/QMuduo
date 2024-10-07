@@ -58,7 +58,7 @@ void EpollPoller::updateChannel(Channel *channel)
     // kAdded=1,//表示已经添加到了
     // kDeleted=2//表示一个channel已经从epoll删除了
     const int index=channel->index();
-    QLC_LOG_DEBUG(g_logger)<<"fd="<<channel->fd()<<"index="<<index<<"events="<<channel->getEvents();
+    QLC_LOG_DEBUG(g_logger)<<"fd= "<<channel->fd()<<" index= "<<index<<" events= "<<channel->getEvents();
     if (index == kNew || index == kDeleted)
     {
         if (index == kNew)
