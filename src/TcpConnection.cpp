@@ -147,6 +147,28 @@ void TcpConnection::sendInLoop(const void *message, size_t len)
 
 
 }
+void TcpConnection::send(Buffer *buf)
+{
+    if (state_ == kConnected)
+    {
+        if (loop_->isInLoopThread())
+        {
+            sendInLoop(buf->peek(), buf->readableBytes());
+            buf->retrieveAll();
+        }
+        else
+        {
+            // 保存当前可读数据的长度，因为在其他线程中调用retrieveAllAsString()会改变它
+            size_t len = buf->readableBytes();
+            // 保存数据内容为字符串，以便在另一个线程中使用
+            std::string message = buf->retrieveAllAsString();
+            // 使用std::bind绑定成员函数和参数
+            void (TcpConnection::*fp)(const void* message, size_t len) = &TcpConnection::sendInLoop;
+            loop_->runInLoop(std::bind(fp, this, message.data(), len));
+        }
+    }
+}
+
 void TcpConnection::shutdown()
 {
     if (state_ == kConnected)

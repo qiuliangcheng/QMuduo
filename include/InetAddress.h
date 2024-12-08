@@ -10,7 +10,7 @@ namespace qlc{
 class InetAddress{
 
 public:
-    explicit InetAddress(uint16_t port=80,std::string ip="127.0.0.1");
+    explicit InetAddress(uint16_t port=80,std::string ip="0.0.0.0");
     explicit InetAddress(sockaddr_in &addr):addr_(addr){};
     std::string toIP() const;
     std::string toIpPort() const;

@@ -33,6 +33,13 @@ public:
     void setThreadNum(int numThreads);
     // 开启服务器监听
     void start();
+    const std::string& getName()const{
+        return name_;
+    }
+    const std::string& getIpPort()const{
+        return ipPort_;
+    }
+    EventLoop* getLoop() const { return loop_; }
 private:    
     void newConnection(int sockfd, const InetAddress &peerAddr);
     void removeConnection(const TcpConnectionPtr &conn);

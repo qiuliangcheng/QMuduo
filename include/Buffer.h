@@ -3,7 +3,8 @@
 #include <unistd.h>
 #include <vector>
 #include <string>
-#include <algorithm> //std::copy
+#include <assert.h>
+#include <algorithm> //std::copy std::search
 //这个文件是用来将所读到的 或者所需要写入发送的数据放到一个缓存区里面 因为内核发送数据很慢
 //所以我们需要写到buffer  这样才能提高效率
 namespace qlc{
@@ -38,6 +39,21 @@ public:
     {
         return begin() + readerIndex_;
     }
+    //找到http请求中的\r\n
+    const char* findCRLF() const
+    {
+        const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+2);
+        return crlf == beginWrite() ? NULL : crlf;
+    }
+
+    const char* findCRLF(const char* start) const
+    {
+        assert(peek() <= start);
+        assert(start <= beginWrite());
+        const char* crlf = std::search(start, beginWrite(), kCRLF, kCRLF+2);
+        return crlf == beginWrite() ? NULL : crlf;
+    }
+    //只改变index的位置  
     void retrieve(size_t len)
     {
         if (len < readableBytes())
@@ -71,12 +87,21 @@ public:
             makeSpace(len); // 扩容函数
         }
     }
+
     // 把[data, data+len]内存上的数据，添加到writable缓冲区当中
     void append(const char *data, size_t len)
     {
         ensureWriteableBytes(len);
         std::copy(data, data+len, beginWrite());
         writerIndex_ += len;
+    }
+    void append(const void* data, size_t len)
+    {
+        append(static_cast<const char*>(data), len);
+    }
+    void append(const std::string& str)
+    {
+        append(str.data(), str.size());//const char* data = str.data();
     }
     char* beginWrite()
     {
@@ -85,6 +110,12 @@ public:
     const char* beginWrite() const
     {
         return begin() + writerIndex_;
+    }
+    void retrieveUntil(const char* end) //从可以读的数据开始读到某个地方
+    {
+        assert(peek() <= end);
+        assert(end <= beginWrite());
+        retrieve(end - peek());
     }
     // 从fd上读取数据
     ssize_t readFd(int fd, int* saveErrno);
@@ -118,6 +149,7 @@ private:
     std::vector<char> buffer_;
     size_t readerIndex_;//开始读的位置
     size_t writerIndex_;//开始写的位置
+    static const char kCRLF[];
 
 };
 }

@@ -5,6 +5,7 @@
 #include "callback.h"
 #include "InetAddress.h"
 #include "Buffer.h"
+#include "httpcontext.h"
 #include <memory>
 #include <string>
 //这个文件是用来将所读到的 或者所需要写入发送的数据放到一个缓存区里面 因为内核发送数据很慢
@@ -22,6 +23,18 @@ public:
         kConnected, 
         kDisconnecting
     };//TcpConnect的连接状态
+    void setContext(const HttpContext& context)
+    { 
+        context_ = context; 
+        contextPtr_ = &context_;
+    }
+
+    const HttpContext& getContext() const{
+         return context_; 
+    }
+    HttpContext* getContextPtr() const {
+        return contextPtr_;
+    }
     bool connected() const { return state_ == kConnected; }
     void connectDestroyed();//就是将loop里面的channel删除
     void connectEstablished();
@@ -31,6 +44,7 @@ public:
     // 发送数据
     void send(const std::string &buf);//服务端发送数据到客户端
     // 关闭连接
+    void send(Buffer* message);
     void shutdown();
     void setConnectionCallback(const ConnectionCallback& cb)
     { connectionCallback_ = cb; }
@@ -68,7 +82,8 @@ private:
     CloseCallback closeCallback_;
 
     size_t highWaterMark_;//数据水位线
-
+    HttpContext context_;
+    HttpContext* contextPtr_;
     Buffer inputBuffer_;  // 接收数据的缓冲区
     Buffer outputBuffer_; // 发送数据的缓冲区
 };

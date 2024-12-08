@@ -3,6 +3,7 @@
 #include <sys/uio.h>
 
 namespace qlc{
+const char Buffer::kCRLF[] = "\r\n";
 ssize_t Buffer::readFd(int fd, int *saveErrno)
 {
     char extrastack[65536]={0};
