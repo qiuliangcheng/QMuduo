@@ -45,4 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/qlc.dir/DependInfo.cmake"
   "CMakeFiles/muduo_test.dir/DependInfo.cmake"
+  "CMakeFiles/http_test.dir/DependInfo.cmake"
   )

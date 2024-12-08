@@ -1,0 +1,127 @@
+[
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/Acceptor.o -c /home/qlc/Qmuduo/src/Acceptor.cpp",
+  "file": "/home/qlc/Qmuduo/src/Acceptor.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/Buffer.o -c /home/qlc/Qmuduo/src/Buffer.cpp",
+  "file": "/home/qlc/Qmuduo/src/Buffer.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/DefaultPoller.o -c /home/qlc/Qmuduo/src/DefaultPoller.cpp",
+  "file": "/home/qlc/Qmuduo/src/DefaultPoller.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/EpollPoller.o -c /home/qlc/Qmuduo/src/EpollPoller.cpp",
+  "file": "/home/qlc/Qmuduo/src/EpollPoller.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/EventLoop.o -c /home/qlc/Qmuduo/src/EventLoop.cpp",
+  "file": "/home/qlc/Qmuduo/src/EventLoop.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/EventLoopThread.o -c /home/qlc/Qmuduo/src/EventLoopThread.cpp",
+  "file": "/home/qlc/Qmuduo/src/EventLoopThread.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/EventLoopThreadPool.o -c /home/qlc/Qmuduo/src/EventLoopThreadPool.cpp",
+  "file": "/home/qlc/Qmuduo/src/EventLoopThreadPool.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/InetAddress.o -c /home/qlc/Qmuduo/src/InetAddress.cpp",
+  "file": "/home/qlc/Qmuduo/src/InetAddress.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/Poller.o -c /home/qlc/Qmuduo/src/Poller.cpp",
+  "file": "/home/qlc/Qmuduo/src/Poller.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/Socket.o -c /home/qlc/Qmuduo/src/Socket.cpp",
+  "file": "/home/qlc/Qmuduo/src/Socket.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/TcpConnection.o -c /home/qlc/Qmuduo/src/TcpConnection.cpp",
+  "file": "/home/qlc/Qmuduo/src/TcpConnection.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/TcpServer.o -c /home/qlc/Qmuduo/src/TcpServer.cpp",
+  "file": "/home/qlc/Qmuduo/src/TcpServer.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/ThreadC11.o -c /home/qlc/Qmuduo/src/ThreadC11.cpp",
+  "file": "/home/qlc/Qmuduo/src/ThreadC11.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/Timestamp.o -c /home/qlc/Qmuduo/src/Timestamp.cpp",
+  "file": "/home/qlc/Qmuduo/src/Timestamp.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/channel.o -c /home/qlc/Qmuduo/src/channel.cpp",
+  "file": "/home/qlc/Qmuduo/src/channel.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/config.o -c /home/qlc/Qmuduo/src/config.cpp",
+  "file": "/home/qlc/Qmuduo/src/config.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/httpcontext.o -c /home/qlc/Qmuduo/src/httpcontext.cpp",
+  "file": "/home/qlc/Qmuduo/src/httpcontext.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/httpresponse.o -c /home/qlc/Qmuduo/src/httpresponse.cpp",
+  "file": "/home/qlc/Qmuduo/src/httpresponse.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/httpserver.o -c /home/qlc/Qmuduo/src/httpserver.cpp",
+  "file": "/home/qlc/Qmuduo/src/httpserver.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/mutex.o -c /home/qlc/Qmuduo/src/mutex.cpp",
+  "file": "/home/qlc/Qmuduo/src/mutex.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/qlc_log.o -c /home/qlc/Qmuduo/src/qlc_log.cpp",
+  "file": "/home/qlc/Qmuduo/src/qlc_log.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/thread.o -c /home/qlc/Qmuduo/src/thread.cpp",
+  "file": "/home/qlc/Qmuduo/src/thread.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++ -Dqlc_EXPORTS -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -fPIC -o CMakeFiles/qlc.dir/src/util.o -c /home/qlc/Qmuduo/src/util.cpp",
+  "file": "/home/qlc/Qmuduo/src/util.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++  -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/muduo_test.dir/test/muduo_test.o -c /home/qlc/Qmuduo/test/muduo_test.cpp",
+  "file": "/home/qlc/Qmuduo/test/muduo_test.cpp"
+},
+{
+  "directory": "/home/qlc/Qmuduo/build",
+  "command": "/usr/bin/g++  -I/home/qlc/Qmuduo/./include  -rdynamic -O0 -fPIC -ggdb -std=c++14 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g -o CMakeFiles/http_test.dir/test/http_test.o -c /home/qlc/Qmuduo/test/http_test.cpp",
+  "file": "/home/qlc/Qmuduo/test/http_test.cpp"
+}
+]

@@ -1,2 +1,2 @@
-# Empty dependencies file for Timestamp_test.
+# Empty dependencies file for http_test.
 # This may be replaced when dependencies are built.

@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qlc/muduo
+CMAKE_SOURCE_DIR = /home/qlc/Qmuduo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qlc/muduo/build
+CMAKE_BINARY_DIR = /home/qlc/Qmuduo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -90,9 +90,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlc/muduo/build/CMakeFiles /home/qlc/muduo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlc/Qmuduo/build/CMakeFiles /home/qlc/Qmuduo/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlc/muduo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlc/Qmuduo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -144,6 +144,19 @@ muduo_test: cmake_check_build_system
 muduo_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/build
 .PHONY : muduo_test/fast
+
+#=============================================================================
+# Target rules for targets named http_test
+
+# Build rule for target.
+http_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 http_test
+.PHONY : http_test
+
+# fast build rule for target.
+http_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_test.dir/build.make CMakeFiles/http_test.dir/build
+.PHONY : http_test/fast
 
 # target to build an object file
 src/Acceptor.o:
@@ -386,6 +399,51 @@ src/config.s:
 .PHONY : src/config.s
 
 # target to build an object file
+src/httpcontext.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpcontext.o
+.PHONY : src/httpcontext.o
+
+# target to preprocess a source file
+src/httpcontext.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpcontext.i
+.PHONY : src/httpcontext.i
+
+# target to generate assembly for a file
+src/httpcontext.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpcontext.s
+.PHONY : src/httpcontext.s
+
+# target to build an object file
+src/httpresponse.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpresponse.o
+.PHONY : src/httpresponse.o
+
+# target to preprocess a source file
+src/httpresponse.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpresponse.i
+.PHONY : src/httpresponse.i
+
+# target to generate assembly for a file
+src/httpresponse.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpresponse.s
+.PHONY : src/httpresponse.s
+
+# target to build an object file
+src/httpserver.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpserver.o
+.PHONY : src/httpserver.o
+
+# target to preprocess a source file
+src/httpserver.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpserver.i
+.PHONY : src/httpserver.i
+
+# target to generate assembly for a file
+src/httpserver.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/httpserver.s
+.PHONY : src/httpserver.s
+
+# target to build an object file
 src/mutex.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlc.dir/build.make CMakeFiles/qlc.dir/src/mutex.o
 .PHONY : src/mutex.o
@@ -446,6 +504,21 @@ src/util.s:
 .PHONY : src/util.s
 
 # target to build an object file
+test/http_test.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_test.dir/build.make CMakeFiles/http_test.dir/test/http_test.o
+.PHONY : test/http_test.o
+
+# target to preprocess a source file
+test/http_test.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_test.dir/build.make CMakeFiles/http_test.dir/test/http_test.i
+.PHONY : test/http_test.i
+
+# target to generate assembly for a file
+test/http_test.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_test.dir/build.make CMakeFiles/http_test.dir/test/http_test.s
+.PHONY : test/http_test.s
+
+# target to build an object file
 test/muduo_test.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo_test.dir/build.make CMakeFiles/muduo_test.dir/test/muduo_test.o
 .PHONY : test/muduo_test.o
@@ -468,6 +541,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... http_test"
 	@echo "... muduo_test"
 	@echo "... qlc"
 	@echo "... src/Acceptor.o"
@@ -518,6 +592,15 @@ help:
 	@echo "... src/config.o"
 	@echo "... src/config.i"
 	@echo "... src/config.s"
+	@echo "... src/httpcontext.o"
+	@echo "... src/httpcontext.i"
+	@echo "... src/httpcontext.s"
+	@echo "... src/httpresponse.o"
+	@echo "... src/httpresponse.i"
+	@echo "... src/httpresponse.s"
+	@echo "... src/httpserver.o"
+	@echo "... src/httpserver.i"
+	@echo "... src/httpserver.s"
 	@echo "... src/mutex.o"
 	@echo "... src/mutex.i"
 	@echo "... src/mutex.s"
@@ -530,6 +613,9 @@ help:
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"
+	@echo "... test/http_test.o"
+	@echo "... test/http_test.i"
+	@echo "... test/http_test.s"
 	@echo "... test/muduo_test.o"
 	@echo "... test/muduo_test.i"
 	@echo "... test/muduo_test.s"
